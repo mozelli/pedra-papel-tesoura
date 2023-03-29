@@ -31,18 +31,32 @@ function calcularResultado() {
 
   if(escolhaDoComputador === escolhaDoJogador) {
     resultadoFinal = "O jogo empatou.";
+    mostraEscolhaDoComputador.setAttribute('class', 'default');
+    mostraEscolhaDoJogador.setAttribute('class', 'default');
   } else if(escolhaDoComputador === "Pedra" && escolhaDoJogador === "Tesoura") {
     resultadoFinal = "Você perdeu.";
+    mostraEscolhaDoComputador.setAttribute('class', 'green');
+    mostraEscolhaDoJogador.setAttribute('class', 'red');
   } else if(escolhaDoComputador === "Pedra" && escolhaDoJogador === "Papel") {
     resultadoFinal = "VOCÊ GANHOU!!";
+    mostraEscolhaDoComputador.setAttribute('class', 'red');
+    mostraEscolhaDoJogador.setAttribute('class', 'green');
   } else if(escolhaDoComputador === "Papel" && escolhaDoJogador === "Tesoura") {
     resultadoFinal = "VOCÊ GANHOU!!";
+    mostraEscolhaDoComputador.setAttribute('class', 'red');
+    mostraEscolhaDoJogador.setAttribute('class', 'green');
   } else if(escolhaDoComputador === "Papel" && escolhaDoJogador === "Pedra") {
     resultadoFinal = "Você perdeu.";
+    mostraEscolhaDoComputador.setAttribute('class', 'green');
+    mostraEscolhaDoJogador.setAttribute('class', 'red');
   } else if(escolhaDoComputador === "Tesoura" && escolhaDoJogador === "Pedra") {
     resultadoFinal = "VOCÊ GANHOU!!";
+    mostraEscolhaDoComputador.setAttribute('class', 'red');
+    mostraEscolhaDoJogador.setAttribute('class', 'green');
   } else if(escolhaDoComputador === "Tesoura" && escolhaDoJogador === "Papel") {
     resultadoFinal = "Você perdeu.";
+    mostraEscolhaDoComputador.setAttribute('class', 'green');
+    mostraEscolhaDoJogador.setAttribute('class', 'red');
   }
   resultado.innerHTML = resultadoFinal;
 }

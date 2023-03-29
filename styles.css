@@ -21,8 +21,28 @@ html, body {
   margin-bottom: 2rem;
 }
 
+.container .label {
+  font-size: 1.8rem;
+}
+
 .container .info span {
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.green {
+  font-weight: 700;
+  color: green;
+}
+
+.red {
+  font-weight: 700;
+  color: red;
+}
+
+.default {
+  font-weight: 700;
+  color: black
 }
 
 .container .options {
